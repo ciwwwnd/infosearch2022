@@ -14,4 +14,4 @@ Run script: ```python hw2.py --dir <DIR_PATH>```
 
 ## HW 3
 
-Run script: ```python hw2.py --path <DIR_PATH>```
+Run script: ```python hw3.py --path <DIR_PATH>```
