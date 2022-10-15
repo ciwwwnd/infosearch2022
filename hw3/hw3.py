@@ -49,8 +49,7 @@ def create_corpus(data_dir):
     texts = []
     replies = []
     with open(data_dir, 'r', encoding='utf-8') as f:
-        # corpus = list(f)[:50000]
-        corpus = list(f)[:500]
+        corpus = list(f)[:50000]
     
     for text in corpus:
         answers = json.loads(text)['answers']
