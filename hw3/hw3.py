@@ -80,7 +80,7 @@ def index_bm25(texts, k = 2, b = 0.75):
         values.append(idf[j] * (tf[i, j] * (k + 1)) / 
                       (tf[i, j] + k * (1 - b + b * l_d[i, 0] / avgdl)))
 
-    matrix = sparse.csr_matrix((values, (rows, cols)))
+    matrix = sparse.csr_matrix((values, (rows, columns)))
 
     return matrix
 
